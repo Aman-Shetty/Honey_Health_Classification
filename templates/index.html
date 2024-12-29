@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Honeybee Health Classification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Honeybee Health Classification</h1>
+        <form id="uploadForm">
+            <input type="file" id="imageUpload" name="file" accept="image/*" required>
+            <button type="submit">Upload & Predict</button>
+        </form>
+        <div id="result" style="display:none;">
+            <h2>Prediction Result:</h2>
+            <p id="prediction"></p>
+            <img id="uploadedImage" alt="Uploaded Image" />
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
